@@ -1,0 +1,271 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+
+
+  color: #330000;
+  background-image: url('../images/background.gif');
+}
+
+.main-wrapper {
+  width: 619px;              /* fast bredde */
+  margin: 50px auto;            /* centrerer midt på siden */
+  background-color:#ffffcc; /* lys baggrund så det står frem */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* let skygge */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+h1{
+  color: #330000;
+}
+p{
+  padding-left: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: bold;  
+  color: #330000;
+}
+
+nav a:hover {
+  color: #e9e91b; 
+}
+
+/*Wrapper til header logik */
+
+/* .header-highlight {
+  margin: 50px auto 0 auto;
+  width: 100%;
+  line-height: 50px;
+  white-space: nowrap;
+
+} */
+/* .header-container {
+  margin: 0 auto 10px auto;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+ */
+
+
+/*Wrapper til header logik */
+.footer-container {
+  text-align: center;
+  /* width: 619px; */
+  align-items: stretch;
+  background-color: #ccaa66;  /* gør boksen synlig */
+  justify-content: center;     /* centrerer horisontalt */
+}
+
+/* .footer-highlight {
+
+  margin: 50px auto 0 auto;
+  width: 100%;
+  white-space: nowrap;
+} */
+
+/*Wrapper til header logik */
+.h3-container {
+  display: flex;
+  text-align: left;
+  padding: 1px;
+  background-color: #ccaa66;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.h3-highlight {
+
+  margin: 0px auto 0 auto;
+  white-space: nowrap;
+}
+
+
+footer {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  padding: 0.6em 10px;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+footer a{
+    color: #330000;               /* valgfri: gør teksten synlig */
+    text-decoration: none;        /* fjern understregning */
+    font-weight: bold;            /* gør teksten fed */
+}
+
+
+ul {
+  display: inline-block; /* gør at ul kan centreres som en blok */
+  text-align: left;      /* sørger for at punkterne står pænt lodret */
+}
+
+dl {
+  display: inline-block; /* gør at ul kan centreres som en blok */
+  text-align: left;      /* sørger for at punkterne står pænt lodret */
+}
+
+
+.content-section {
+  overflow: auto; /* så float ikke ødelægger layoutet */
+  padding: 10px 15px; /* lidt luft omkring teksten */
+}
+
+
+.music-wrapper {
+  width: 619px;              /* fast bredde */
+  margin: 50px auto;            /* centrerer midt på siden */
+  background-color:#ffffcc; /* lys baggrund så det står frem */
+  box-sizing: border-box;
+}
+
+/*De nye tilføjesler for flexbox*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+
+}
+
+
+.sidebar {
+  flex: 2; /* eller en fast bredde fx 150px */
+  background-color: #fdfbaf;
+
+}
+.content {
+  flex: 11;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px; /
+}
+
+.content-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.music-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.index-image {
+  
+  padding: 10px;
+  width: 250px;       /* justér billedets størrelse */
+}
+
+.right-imageMusic {
+  width: 50px;       /* justér billedets størrelse */
+  padding: 10px;
+
+}
+
+/* for menu nyt*/
+tr:nth-of-type(odd) {
+    background-color: #ccaa66;
+}
+
+/* for tabel*/
+form {
+    padding: 10px;
+}
+
+label {
+    float: left;
+    width: 100px;
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+input, textarea {
+    margin-top: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30em;
+}
+
+textarea {
+    height: 10em;
+}
+
+#mySubmit {
+    margin-left: 110px;
+}
+
+.button {
+    border-radius: 3px;
+    border: solid 1px #1A4575;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #663300;
+    color: #fee1cc;
+    text-decoration: none;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    width: 10em;
+    vertical-align: middle;
+    font-family: Verdana,Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+    .button:hover {
+        text-decoration: underline;
+        /*background: #4479BA;*/
+        background-color: #996633;
+        border: solid 1px #20538D;
+    }

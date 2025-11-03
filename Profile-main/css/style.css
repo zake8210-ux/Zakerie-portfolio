@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary: #1e3a8a;
+    --secondary: #0d1f4c;
+    --bg: #fdfaf6;
+    --text: #222;
+    --footer-bg: #0d1f4c;
+    --accent: #1e3a8a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+#hero h1 {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 2.8rem;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+
+/* Hero */
+#hero {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects */
+.project-item {
+    background: #fff;
+    border-left: 5px solid var(--primary);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+}
+
+.project-item a {
+    background: var(--primary);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.project-item a:hover {
+    background: var(--secondary);
+}
+
+/* Skills section */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.1);
+}
+
+/* Niveau-badge */
+.level {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    min-width: 95px;
+    text-align: center;
+}
+
+/* Farvekoder for niveauer */
+.proficient {
+    background-color: #16a34a; /* grøn */
+}
+
+.experienced {
+    background-color: #2563eb; /* blå */
+}
+
+.familiar {
+    background-color: #facc15; /* gul */
+    color: #333;
+}
+
+/* Contact */
+#contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: #e0e6ff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* Subtle fade animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #hero {
+        padding: 80px 20px;
+    }
+
+    .hero-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
